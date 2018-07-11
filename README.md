@@ -1,4 +1,4 @@
-# Alessandro Martins's ifconfig.pm
+# Alessandro Martins's ifconfig.me alternative
 
 This is a slightly modified version of https://github.com/georgyo/ifconfig.io :
 * Support for HTTP Connection, Charset, Via, Do-Not-Track and Cache-Control headers

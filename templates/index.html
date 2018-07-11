@@ -1,17 +1,30 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Generator" content="Vim">
+    <meta name="Author" content="Alessandro Martins">
+    <meta name="Description" content="Alessandro Martins personal website and blog.">
+    <meta name="Keywords" content="alessandro martins, alessandro, fernandes, martins, alessandro fernandes martins, blog, computers, linux, unix, gnu, security, it, ti.">
+    <meta http-equiv="content-language" content="en_US">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="//www.martins.eng.br/meuip.ico">
     <style>li.list-group-item{overflow:auto;padding-top:6px;padding-bottom:6px;}header.page-header{margin-top:20px;}a.h1{color:inherit;text-decoration:none;}@media(max-width: 750px){div.col-sm-3{font-weight:700;}}</style>
-    <title>ifconfig.pm</title>
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-378255-22"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-378255-22');
+     </script>
+    <title> Meu IP </title>
   </head>
   <body>
     <header class="page-header container">
-      <a href="/" class="h1">
-        What is my ip address? - <small>ifconfig.pm</small>
-      </a>
+      <a href="/" class="h1">meuip.martins.eng.br</a>
     </header>
     <nav class="container"></nav>
     <main class="container">
@@ -79,67 +92,67 @@
         </div>
         <ul class="list-group">
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm</div><div class="col-sm-8">{{ .ip }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br</div><div class="col-sm-8">{{ .ip }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/ip</div><div class="col-sm-8">{{ .ip }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/ip</div><div class="col-sm-8">{{ .ip }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/host</div><div class="col-sm-8">{{ .host }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/host</div><div class="col-sm-8">{{ .host }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/country</div><div class="col-sm-8">{{ .country }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/country</div><div class="col-sm-8">{{ .country }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/ua</div><div class="col-sm-8">{{ .ua }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/ua</div><div class="col-sm-8">{{ .ua }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/protocol</div><div class="col-sm-8">{{ .protocol }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/protocol</div><div class="col-sm-8">{{ .protocol }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/port</div><div class="col-sm-8">{{ .port }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/port</div><div class="col-sm-8">{{ .port }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/lang</div><div class="col-sm-8">{{ .lang }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/lang</div><div class="col-sm-8">{{ .lang }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/connection</div><div class="col-sm-8">{{ .connection }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/connection</div><div class="col-sm-8">{{ .connection }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/encoding</div><div class="col-sm-8">{{ .encoding }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/encoding</div><div class="col-sm-8">{{ .encoding }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/mime</div><div class="col-sm-8">{{ .mime }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/mime</div><div class="col-sm-8">{{ .mime }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/cache</div><div class="col-sm-8">{{ .cache }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/cache</div><div class="col-sm-8">{{ .cache }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/dnt</div><div class="col-sm-8">{{ .dnt }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/dnt</div><div class="col-sm-8">{{ .dnt }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/charset</div><div class="col-sm-8">{{ .charset }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/charset</div><div class="col-sm-8">{{ .charset }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/via</div><div class="col-sm-8">{{ .via }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/via</div><div class="col-sm-8">{{ .via }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/forwarded</div><div class="col-sm-8">{{ .forwarded }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/forwarded</div><div class="col-sm-8">{{ .forwarded }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/all</div><div class="col-sm-8">{{ .hash_as_yaml }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/all</div><div class="col-sm-8">{{ .hash_as_yaml }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/all.xml</div><div class="col-sm-8">{{ .hash_as_xml }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/all.xml</div><div class="col-sm-8">{{ .hash_as_xml }}</div>
           </li>
           <li class="list-group-item">
-            <div class="col-sm-4">$ curl ifconfig.pm/all.json</div><div class="col-sm-8">{{ .hash_as_json }}</div>
+            <div class="col-sm-4">$ curl meuip.martins.eng.br/all.json</div><div class="col-sm-8">{{ .hash_as_json }}</div>
           </li>
         </ul>
       </div>
     </main>
     <footer class="container text-center">
-      <p>&copy; <a href="https://github.com/georgyo/ifconfig.io">Original source code from georgyo</a>, <a href="https://github.com/pfoo/ifconfig.io">fork available on github</a></p>
+      <p>&copy; <a href="https://github.com/georgyo/ifconfig.io">Original source code from georgyo</a> and forked by <a href="https://github.com/amartins/meuip.martins.eng.br">Alessandro Martins</a></p>
     </footer>
 <!-- Hello World -->
   </body>
