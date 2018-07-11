@@ -1,0 +1,11 @@
+[Unit]
+Description=ifconfig.pm
+
+[Service]
+Environment="GIN_MODE=release"
+WorkingDirectory=<YOUR PATH>
+ExecStart=<YOUR PATH>/ifconfig.pm
+
+[Install]
+WantedBy=multi-user.target
+~
