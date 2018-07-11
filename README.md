@@ -1,15 +1,17 @@
-
-# ifconfig.pm
+# Alessandro Martins's ifconfig.pm
 
 This is a slightly modified version of https://github.com/georgyo/ifconfig.io :
 * Support for HTTP Connection, Charset, Via, Do-Not-Track and Cache-Control headers
 * Added Protocol field
 * Added a way to support real client port when the app is run behind a proxy
 * wget and fetch are treated like curl (providing value without html formating)
+* Support to Go version 1.7+
+* Support to Lighttd Web Server
+* Added systemd service file
 
 Build instruction :
 * install golang-go
-* git clone https://github.com/pfoo/ifconfig.pm.git
+* git clone https://github.com/amartins/ifconfig.pm.git
 * cd ifconfig.pm
 * export GOPATH="`pwd`"
 * go get -d -v
@@ -17,12 +19,12 @@ Build instruction :
 
 A few parameters can be defined using export :
 * export GIN_MODE=debug|release
-* export PORT="8081"
+* export PORT="8080"
 * export HOST="127.0.0.1"
 
 Running behind a proxy (usefull if you already have a webserver running on port 80) :
-* Run the go program on 127.0.0.1:8081
-* Use apache mod_proxy to proxy requests from apache to http://127.0.0.1:8081/
+* Run the go program on 127.0.0.1:8080
+* Use apache mod_proxy to proxy requests from apache to http://127.0.0.1:8080/
 * Add followings headers to the proxyfied requests :<br>
 	CF-Connecting-IP : The IP address the client is connecting from. Important or the IP will be wrong.<br>
 	CF-Connecting-PORT : The port the client is connecting from. Important or the PORT will be wrong.<br>
